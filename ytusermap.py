@@ -17,7 +17,7 @@ class State:
     self.video_list = {}
     self.lock = threading.Lock()
 
-max_nodes = 12
+max_nodes = 100
 time_limit = 60 * 60 # 1 hour
 
 def user_link(name):
