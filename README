@@ -1,0 +1,13 @@
+Rough scripts for making graphs from youtube annotation relationships.
+
+Created to help play John Robertson's The Dark Room (http://youtu.be/hvkjP6dqpfY) and then expanded to illustrate the connections between youtube musicians.
+
+ytusermap.py - creates a graph of youtube usernames with edges representing links to other youtube user pages that appear in their videos.
+ytvidmap.py - creates a graph of youtube videos with edges representing links to other videos.
+libyt.py - handles the fetching and parsing of youtube data (currently just regular expressions and urlopens) as well as providing a caching layer
+libgraph.py - handles the graph and svg generation by calling pygraphviz (which itself calls graphviz)
+
+Usage:
+python ytusermap.py [output_file] [username1] [username2] ... [usernamen]
+
+python ytvidmap.py [output_file] [video_id1] [video_id2] ... [video_idn]
