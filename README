@@ -11,3 +11,6 @@ Usage:
 python ytusermap.py [output_file] [username1] [username2] ... [usernamen]
 
 python ytvidmap.py [output_file] [video_id1] [video_id2] ... [video_idn]
+
+Note:
+The YouTube GData API doesn't provide access to annotations which is why the re/urlopen approach was chosen
